@@ -1,6 +1,5 @@
 public class LyricsTyper {
-
-    // Method to type a line character by character
+    
     public static void typeLyric(String line, long charDelay) {
         for (int i = 0; i < line.length(); i++) {
             System.out.print(line.charAt(i));
@@ -14,12 +13,10 @@ public class LyricsTyper {
         System.out.println();
     }
 
-    // Overloaded method with default delay (like Python default argument)
     public static void typeLyric(String line) {
-        typeLyric(line, 65); // 0.065 seconds = 65 ms
+        typeLyric(line, 65);
     }
 
-    // Method to print all lyrics
     public static void printLyrics() {
         String[] lyrics = {
             "Dil jo tumhara hai,",
